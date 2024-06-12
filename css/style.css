@@ -29,6 +29,7 @@ body{
     backdrop-filter: blur(10px);
     position:fixed;
     top: 0;
+    z-index:-1;
     
 
 }
@@ -75,6 +76,8 @@ body{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    overflow: hidden;
+    z-index: 10;
 }
 
 #nav-info-page span{
@@ -90,6 +93,9 @@ body{
     display: flex;
     align-items: center;
     color: black;
+    position: relative;
+    z-index: 12;
+    
 }
 
 #nav-info-page span i{
@@ -106,17 +112,59 @@ body{
   font-size: 4vw;
   color: var(--sea-blue);
   cursor: pointer;
+  z-index: 12;
 }
 
-#activity{
-    height: 80vh;
-    width: 70vw;
-    background-color: rgba(245, 245, 245, 0.895);
+#show{
+    height: 50px;
+    width: 50px;
+    background-color: black;
     position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%,-50%);
-    border: 1px solid black;
-    backdrop-filter:blur(100px);
-    border-radius: 7px;
+    top: 0;
+    right: 0;
+    border-radius: 50%;
+    z-index: 11;
+    transition: all 0.1s ease-in;
+}
+
+
+@media  screen and (max-width:480px) {
+    #nav{
+        height:7vh;
+    }
+    
+    #nav #left{
+        font-size: 2.9vw;
+    }
+    
+    
+
+
+#right img{
+   height: 100%;
+}
+
+
+
+#nav-info-page span{
+    font-size: 6vw;
+    height: 8vh;
+ }
+
+
+
+ 
+#nav-info-page span i{
+    font-size: 5.5vw;
+}
+
+
+#nav-page-cross{
+  font-size: 10vw;
+}
+
+#show{
+    height: 30px;
+    width: 30px;
+}
 }
