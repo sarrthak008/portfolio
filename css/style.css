@@ -1,0 +1,51 @@
+@font-face {
+    font-family: gily-roy;
+    src: url(../fonts/gily-roy.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: gily-roy;
+}
+:root{
+   --sea-blue:#7bd1ee; 
+  
+}
+
+body{
+    background-color: whitesmoke;
+}
+
+#nav{
+    height: 10vh;
+    width: 100vw;
+    background-color: rgba(243, 235, 235, 0.546);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    backdrop-filter: blur(10px);
+    position:fixed;
+    top: 0;
+
+}
+
+#nav #left{
+    display: flex;
+    align-items: center;
+    gap: 2vw;
+    height: 100%;
+    font-size: 1.3vw;
+    font-weight: 600;
+}
+
+#left span{
+    padding: 0.2vh 2vw;
+    background-color: var(--sea-blue);
+    border-radius: 25px;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
