@@ -15,6 +15,8 @@
 
 body{
     background-color: whitesmoke;
+    height: 100%;
+    width: 100vw;
 }
 
 #nav{
@@ -27,6 +29,7 @@ body{
     backdrop-filter: blur(10px);
     position:fixed;
     top: 0;
+    
 
 }
 
@@ -49,3 +52,71 @@ body{
     justify-content: center;
 }
 
+#nav #right{
+    height: 100%;
+}
+
+#right img{
+   height: 80%;
+   width: 100%;
+   object-fit: fill;
+   cursor: pointer;
+}
+
+#nav-info-page{
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    background-color:rgba(245, 245, 245, 0.733);
+    top: 0;
+    right: -200%;
+    backdrop-filter: blur(20px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#nav-info-page span{
+    font-size: 3vw;
+    display: inline;
+    height: 15vh;
+    margin-top: 4vh;
+    display: flex;
+    gap: 2vw;
+    font-weight: 800;
+    border-bottom: 1px solid black;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    color: black;
+}
+
+#nav-info-page span i{
+    font-size: 2vw;
+}
+
+
+#nav-page-cross{
+  position: absolute;
+  top: 10%;
+  right: 10vw;
+  height: 6vh;
+  width: 4vw;
+  font-size: 4vw;
+  color: var(--sea-blue);
+  cursor: pointer;
+}
+
+#activity{
+    height: 80vh;
+    width: 70vw;
+    background-color: rgba(245, 245, 245, 0.895);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    border: 1px solid black;
+    backdrop-filter:blur(100px);
+    border-radius: 7px;
+}
