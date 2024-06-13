@@ -49,7 +49,7 @@ document.addEventListener("mousemove",(dets)=>{
 
 let spns=document.querySelectorAll("#nav-info-page span")
  for(let i =0 ; i<spns.length;i++){
-     console.log(spns[i])
+    // console.log(spns[i])
        spns[i].addEventListener("mouseenter",()=>{
          showDiv.style.height="55px"
          showDiv.style.width="55px"
