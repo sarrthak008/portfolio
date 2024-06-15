@@ -67,8 +67,26 @@ let spns=document.querySelectorAll("#nav-info-page span")
 
  // bg1 img animation
    
-    let img = document.querySelector("#bg-box img");
+    let img = document.querySelector("#main-img");
     let imgConatiner = document.querySelector("#bg-box");
 
-    
+   imgConatiner.addEventListener("mousemove",(e)=>{
+    let xaxis= (e.pageX-window.innerWidth/10)/100;
+    let yaxis =(e.pageY-window.innerHeight/10)/100;
+    //console.log(xaxis)
+        img.style.transform=`rotateX(${yaxis}deg) rotateY(${xaxis}deg)`;
+   });
 
+   
+
+   imgConatiner.addEventListener("mouseenter",()=>{
+      img.style.transform=`translateZ(${10}}px) rotate(${40}deg)`;
+      img.style.scale=`${1.1}`
+   })
+
+
+   imgConatiner.addEventListener("mouseleave",()=>{
+    img.style.transform=`translateZ(${0}px) rotate(${0}deg)`;
+    img.style.scale=`${1}`
+    img.style.transition=`all ${0.5}s ease` ;
+ })

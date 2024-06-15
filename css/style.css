@@ -205,18 +205,65 @@ body::-webkit-scrollbar{
     font-size: 1.1em;
 }
 
+#btn-div{
+    height: 10vh;
+    width: 50vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3vw;
+    margin-top: 4vh;
+}
+
+#btn-div a{
+    padding: 0.8vh 2.5vw;
+    background-color: red;
+    border-radius: 19px;
+    text-decoration: none;
+    font-weight: 700;
+    color: black;
+    cursor: pointer;
+}
+
 #bg-box{
     height: 70vh;
-    width: 70%;
+    width: 90%;
     margin-top: 5vh;
     transform-style: preserve-3d;
+    position: relative;
+     display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
 }
-#bg-box img{
+#bg-box #main-img{
     height: 100%;
-    width: 100%;
+    width: 70%;
     object-fit: fill;
-    transform: translateZ(-20px) rotate(10deg);
+    transform: translateZ(0px) rotate(0deg);
+    filter: drop-shadow(10px 10px 10px gray );
+}
+
+#img-1{
+    position: absolute;
+    height: 20vh;
+    width: 20vw;
+    top: 20vh;
+    z-index: 1;
+    left: 0;
     
+    filter: drop-shadow(10px 10px 10px gray );
+}
+
+#img-2{
+    position: absolute;
+    height: 10vh;
+    width: 10vw;
+    bottom: 0;
+    z-index: 1;
+    right: 0;
+    
+    filter: drop-shadow(10px 10px 10px gray );
 }
 
 
