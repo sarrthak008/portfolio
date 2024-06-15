@@ -27,6 +27,7 @@ navTimelien.pause(); //pause the time line...
 
 openIcon.addEventListener('click',()=>{
     navTimelien.play();
+    //alert("hii")
 })
 
 closeIcon.addEventListener("click",()=>{
@@ -63,4 +64,11 @@ let spns=document.querySelectorAll("#nav-info-page span")
       })
  }
 
+
+ // bg1 img animation
+   
+    let img = document.querySelector("#bg-box img");
+    let imgConatiner = document.querySelector("#bg-box");
+
+    
 
