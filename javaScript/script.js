@@ -71,9 +71,9 @@ let spns=document.querySelectorAll("#nav-info-page span")
     let imgConatiner = document.querySelector("#bg-box");
 
    imgConatiner.addEventListener("mousemove",(e)=>{
-    let xaxis= (e.pageX-window.innerWidth/10)/100;
-    let yaxis =(e.pageY-window.innerHeight/10)/100;
-    //console.log(xaxis)
+    let xaxis= (e.pageX-window.innerWidth/20)/200;
+    let yaxis =(e.pageY-window.innerHeight/20)/200;
+   // console.log(xaxis)
         img.style.transform=`rotateX(${yaxis}deg) rotateY(${xaxis}deg)`;
    });
 
@@ -81,12 +81,44 @@ let spns=document.querySelectorAll("#nav-info-page span")
 
    imgConatiner.addEventListener("mouseenter",()=>{
       img.style.transform=`translateZ(${10}}px) rotate(${40}deg)`;
-      img.style.scale=`${1.1}`
+      img.style.scale=`${1.2}`
    })
 
 
    imgConatiner.addEventListener("mouseleave",()=>{
     img.style.transform=`translateZ(${0}px) rotate(${0}deg)`;
     img.style.scale=`${1}`
-    img.style.transition=`all ${0.5}s ease` ;
+    img.style.transition=`all ${1}s ease` ;
  })
+
+
+ let __3dFunction = (parentDiv,childDiv)=>{
+    
+    parentDiv.addEventListener("mousemove",(e)=>{
+        let xaxis= (e.pageX-window.innerWidth/20)/100;
+        let yaxis =(e.pageY-window.innerHeight/20)/100;
+        //console.log(xaxis)
+        childDiv.style.transform=`rotateX(${yaxis}deg) rotateY(${xaxis}deg)`;
+       });
+
+       parentDiv.addEventListener("mouseenter",()=>{
+        childDiv.style.transform=`translateZ(${10}}px) rotate(${40}deg)`;
+        childDiv.style.scale=`${1.2}`
+     })
+
+
+     parentDiv.addEventListener("mouseleave",()=>{
+        child.style.transform=`translateZ(${0}px) rotate(${0}deg)`;
+        child.style.scale=`${1}`
+        child.style.transition=`all ${1}s ease` ;
+     })
+
+
+ }
+
+let parent = document.querySelector(".text-container")
+let child =document.querySelector(".text-container img")
+
+__3dFunction(parent,child)
+
+
