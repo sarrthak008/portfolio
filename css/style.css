@@ -427,8 +427,8 @@ body::-webkit-scrollbar{
 
 
 #bg-box{
-    
-    overflow: hidden;
+    margin-top: 0vh; 
+    height: 50vh;
 }
 #bg-box #main-img{
     height: 100%;
