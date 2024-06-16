@@ -262,7 +262,7 @@ body::-webkit-scrollbar{
 
 
 #page2{
-    height: 1000px;
+    height: 100vh;
     width: 95vw;
     margin-top: 40vh;
     perspective: 150px;
@@ -423,9 +423,6 @@ body::-webkit-scrollbar{
     font-size: 4vw;
 }
 
-
-
-
 #bg-box{
     margin-top: 0vh; 
     height: 50vh;
@@ -436,7 +433,37 @@ body::-webkit-scrollbar{
     width: 100%;
 }
 
+#page2{
+    margin-top: 20vh;
+}
 
+.text-container{
+    height: 15vh;
+    width: 80vw;
+    font-size: 9vw;
+
+}
+.text-container span{
+     display: flex;
+     align-items: center;
+     gap: 2vw;
+}
+
+.text-container .spn{
+    display: inline-block;
+    height: 7px;
+    width: 50px;
+    background-color: black;
+}
+.text-container b{
+ font-size: 9.4vw;
+}
+
+.text-container img{
+    position: absolute;
+    height: 10vh;
+    width: 15vw;
+}
 
 
 }
