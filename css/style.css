@@ -427,9 +427,13 @@ body::-webkit-scrollbar{
 
 
 #bg-box{
+    
     overflow: hidden;
 }
-
+#bg-box #main-img{
+    height: 100%;
+    width: 100%;
+}
 
 
 
