@@ -429,6 +429,7 @@ body::-webkit-scrollbar{
 #bg-box{
     margin-top: 0vh; 
     height: 50vh;
+    cursor:none;
 }
 #bg-box #main-img{
     height: 100%;
