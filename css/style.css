@@ -366,4 +366,72 @@ body::-webkit-scrollbar{
     height: 30px;
     width: 30px;
 }
+
+#page1{
+    margin-top: 200vh;
+  
+}
+
+#show-case{
+    height: 6.5vh;
+    width: 45vw;
+    font-size:4vw;
+    margin-bottom: 5vh;
+    text-wrap: nowrap;
+}
+
+#show-case .case1{
+    background-color: rgba(128, 128, 128, 0.612);
+    padding: .5vh 1.8vw;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+}
+
+
+.heading1{
+    font-size: 12vw;
+}
+
+.heading2{
+    font-size: 12vw;
+}
+
+#page1 p{
+    text-align: center;
+    font-size: 4vw;
+}
+
+#btn-div{
+    height: 20vh;
+    width: 90vw;
+    gap: 5vw;
+    margin-top: 4vh;
+    flex-direction: column;
+}
+
+#btn-div a{
+    padding: 0.7vh 7vw;
+    background-color: red;
+    border-radius: 19px;
+    text-decoration: none;
+    font-weight: 700;
+    color: black;
+    cursor: pointer;
+    position: relative;
+    z-index: 91;
+    font-size: 4vw;
+}
+
+
+
+
+#bg-box{
+    overflow: hidden;
+}
+
+
+
+
+
 }
