@@ -156,7 +156,7 @@ body::-webkit-scrollbar{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-top: 230vh;
+    margin-top: 270vh;
     perspective: 200;
     perspective: 150px;
     max-height: fit-content;
@@ -302,8 +302,45 @@ body::-webkit-scrollbar{
     transform: rotate(13deg);
 }
 
+.info-container{
+    height: 20vh;
+    width: 100%;
+    margin-top: 4vh;
+}
 
+.info{
+    height: 100%;
+    width: 25vw;
+    background-color: black;
+    position: relative;
+    border-radius: 7px;
+    overflow: hidden;
+}
+.info img{
+    height: 100%;
+    width: 100%;
+    object-fit: fill;
+}
 
+.info::before{
+    height: 100%;
+    width: 100%;
+    content: "this simple chat application based on socket io";
+    color: rgb(230, 220, 220);
+    position: absolute;
+    bottom: -100%;
+    left: 0; 
+    transition: all 0.5s ease-in ;
+    font-size: 2.5vw;
+    color: black;
+    font-weight: 700;
+    text-align: center;
+    background:linear-gradient(rgba(150, 228, 244, 0.911),rgb(229, 180, 244)) ;
+}
+
+.info:hover::before{
+    bottom: 0%;
+}
 
 
 
