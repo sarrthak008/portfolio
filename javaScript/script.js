@@ -43,6 +43,11 @@ document.querySelector(".nav-github").addEventListener("click",()=>{
     window.open("https://github.com/sarrthak008")
 })
 
+
+document.querySelector(".nav-acn").addEventListener("click",()=>{
+    window.open("https://my-activitie.netlify.app/")
+})
+
 document.addEventListener("mousemove",(dets)=>{
   showDiv.style.top=`${dets.clientY}px`
   showDiv.style.left=`${dets.clientX}px`
