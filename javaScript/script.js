@@ -100,30 +100,57 @@ let spns=document.querySelectorAll("#nav-info-page span")
  let __3dFunction = (parentDiv,childDiv)=>{
     
     parentDiv.addEventListener("mousemove",(e)=>{
-        let xaxis= (e.pageX-window.innerWidth/20)/100;
-        let yaxis =(e.pageY-window.innerHeight/20)/100;
+        let xaxis= (e.pageX-window.innerWidth/1)/65;
+        let yaxis =(e.pageY-window.innerHeight/1)/65;
         //console.log(xaxis)
         childDiv.style.transform=`rotateX(${yaxis}deg) rotateY(${xaxis}deg)`;
        });
 
        parentDiv.addEventListener("mouseenter",()=>{
-        childDiv.style.transform=`translateZ(${10}}px) rotate(${40}deg)`;
+        childDiv.style.transform=`translateZ(${10}}px) rotate(${10}deg)`;
         childDiv.style.scale=`${1.2}`
+        
      })
 
 
      parentDiv.addEventListener("mouseleave",()=>{
-        child.style.transform=`translateZ(${0}px) rotate(${0}deg)`;
-        child.style.scale=`${1}`
-        child.style.transition=`all ${1}s ease` ;
+        childDiv.style.transform=`translateZ(${0}px) rotate(${0}deg)`;
+        childDiv.style.scale=`${1}`
+        childDiv.style.transition=`all ${0.1}s ease` ;
+        childDiv.style.transform=`rotateX(${0}deg) rotateY(${0}deg)`;
      })
 
 
  }
 
-let parent = document.querySelector(".text-container")
-let child =document.querySelector(".text-container img")
 
-__3dFunction(parent,child)
+ //making card look like 3D
+
+ let cards = document.querySelectorAll(".card")
+ let infoContainer = document.querySelector(".info-container")
+
+    cards.forEach((card,ind)=>{
+        __3dFunction(infoContainer,card)
+    })
+
+let imgs = document.querySelectorAll(".card-img img")
+
+       imgs.forEach((img,ind)=>{
+           __3dFunction(infoContainer,img)
+       })
+
+let texts = document.querySelectorAll(".card-info h3")
+
+texts.forEach((text)=>{
+    __3dFunction(infoContainer,text);
+})
+
+let btns = document.querySelectorAll(".card-btn")
+
+btns.forEach((btn)=>{
+    __3dFunction(infoContainer,btn)
+})
+
+
 
 

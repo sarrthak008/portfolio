@@ -319,7 +319,6 @@ body::-webkit-scrollbar{
     height: 100%;
     width: 22vw;
     background-color: white;
-    overflow: hidden;
     border-radius: 9px;
     display: flex;
     flex-direction: column;
@@ -341,8 +340,12 @@ body::-webkit-scrollbar{
     height: 100%;
     width: 100%;
     object-fit: contain;
+    filter: drop-shadow(1px 1px 60px #ab02fa65);
 }
 
+.card:hover.card-img img{
+  transform: rotate(40deg);
+}
 
 .card-info{
     height: 33%;
@@ -354,6 +357,8 @@ body::-webkit-scrollbar{
     font-size: 2.2vw;
     font-weight: 900;
     margin-top: 1vh;
+    margin-bottom: 2vh;
+    text-shadow: 1px 1px 4px rgb(153, 149, 149);
 }
 
 .card-info span{
