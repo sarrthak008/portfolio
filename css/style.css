@@ -725,13 +725,11 @@ body::-webkit-scrollbar{
 #cover{
     height: 100%;
     width: 100%;
+    display: none;
 }
 
 
-#eye-container{
-    height: 10vh;
-    width: 40vw;
-}
+
 
 .blk-side{
     height: 100%;
