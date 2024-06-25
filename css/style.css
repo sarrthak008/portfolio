@@ -263,7 +263,7 @@ body::-webkit-scrollbar{
 
 
 #page2{
-    height: 150vh;
+    height: 100vh;
     width: 95vw;
     margin-top: 10vh;
     perspective: 150px;
@@ -385,9 +385,24 @@ body::-webkit-scrollbar{
 #page3{
     height: 100vh;
     width: 100vw;
-    background-color: gray;
+    margin-top: 10vh;
 }
 
+#vid-div{
+    height: 80vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#vid-div video{
+    border-radius: 9px;
+    height: 100%;
+    width: 90%;
+    object-fit: fill;
+}
 
 
 
