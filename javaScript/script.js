@@ -153,4 +153,39 @@ btns.forEach((btn)=>{
 
 
 
+//mouse move in video  div...
+
+
+
+let movingDiv = document.querySelector("#move-div")
+document.addEventListener("mousemove",(dets)=>{
+  movingDiv.style.top=`${dets.clientY-140}px`
+  movingDiv.style.left=`${dets.clientX-110}px`
+})
+
+let eyes = document.querySelectorAll(".white-side")
+ eyes.forEach((eye)=>{
+      
+    document.addEventListener("mousemove",(dets)=>{
+        eye.style.top=`${dets.clientY/9}px`
+        eye.style.left=`${dets.clientX/20}px`
+      })
+
+ })
+ 
+ let cover = document.querySelector("#cover")
+ let vid = document.querySelector("#vid-div video")
+ let flag = 0;
+
+  vid.addEventListener("click",()=>{
+       if(flag==0){
+         cover.style.opacity =0;
+         movingDiv.innerHTML=`PAUSE <br> VIDEO`
+         flag = 1;
+       } else if(flag == 1){
+        cover.style.opacity =1;
+         movingDiv.innerHTML=`PLAY <br> VIDEO`
+        flag = 0;
+       }
+  })
 

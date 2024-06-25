@@ -390,22 +390,93 @@ body::-webkit-scrollbar{
 
 #vid-div{
     height: 80vh;
-    width: 100vw;
+    width: 90%;
     display: flex;
     align-items: center;
     justify-content: center;
-
+    overflow: hidden;
+    border-radius: 9px;
+    margin-left: 5%;
+    margin-top: 4vh;
+    position: relative;
+    cursor: grab;
 }
 
 #vid-div video{
     border-radius: 9px;
-    height: 100%;
-    width: 90%;
+    height: 130%;
+    width: 100%;
     object-fit: fill;
 }
 
+#cover{
+    height: 100%;
+    width: 100%;
+    object-fit: fill;
+    position: absolute;
+    top: 0;
+    left: 0;
+    pointer-events: fill;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: grey;
+}
 
 
+#eye-container{
+    height: 22vh;
+    width: 18vw;
+    position: relative;
+    display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+
+.blk-side{
+    height: 100%;
+    width:7vw;
+    background-color: black;
+    border-radius: 50%;
+    position: relative;
+    overflow: hidden;
+    border-top: 5px solid rgb(208, 203, 203);
+}
+
+.white-side{
+    height: 7vh;
+    width: 3vw;
+    background-color: whitesmoke;
+    border-radius: 50%;
+    position: absolute;
+    top: 60%;
+    left: 40%;
+    border: 2px solid gray;
+}
+
+#move-div{
+    height: 60px;
+    width: 60px;
+    background-color: black;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 50%;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+    color: whitesmoke;
+    font-weight: 900;
+    font-size: 1vw;
+}
+
+#page4{
+    height: 100vh;
+    width: 100vw;
+    background-color: #10b7ef;
+    
+}
 
 
 
@@ -435,9 +506,6 @@ body::-webkit-scrollbar{
         font-size: 2.9vw;
     }
     
-    
-
-
 #right img{
    height: 80%;
 }
@@ -467,8 +535,9 @@ body::-webkit-scrollbar{
 }
 
 #page1{
-    margin-top: 200vh;
-  
+    margin-top: 10vh;
+    margin-bottom: 0;
+    min-height: 110vh;
 }
 
 #show-case{
@@ -477,6 +546,7 @@ body::-webkit-scrollbar{
     font-size:4vw;
     margin-bottom: 5vh;
     text-wrap: nowrap;
+    margin-top: 0;
 }
 
 #show-case .case1{
@@ -538,14 +608,14 @@ body::-webkit-scrollbar{
 
 .text-container{
     height: 15vh;
-    width: 80vw;
+    width: 90vw;
     font-size: 9vw;
 
 }
 .text-container span{
      display: flex;
      align-items: center;
-     gap: 2vw;
+     gap: 1vw;
 }
 
 .text-container .spn{
@@ -563,6 +633,124 @@ body::-webkit-scrollbar{
     height: 10vh;
     width: 15vw;
 }
+
+
+
+
+
+
+.info-container{
+   min-height: 150vh;
+    width: 100vw;
+    margin-top: 9vh;
+    flex-direction: column;
+    pointer-events: none;
+    
+  }
+  
+  .card{
+      height:50vh;
+      width: 80vw;
+      margin-bottom: 5vh;
+      overflow: hidden;
+      pointer-events: none;
+    }
+  
+  .card-img{
+      height: 40%;
+      width: 100%;
+  }
+  
+  .card-img img{
+      height: 100%;
+      width: 100%;
+      object-fit: contain;
+      filter: drop-shadow(1px 1px 60px #ab02fa65);
+  }
+  
+  .card:hover.card-img img{
+    transform: rotate(40deg);
+  }
+  
+  .card-info{
+      height: 33%;
+      width: 100%;
+      padding: 0vh 0.2vw;
+  }
+  
+  .card-info h3{
+      font-size: 6.2vw;
+      font-weight: 900;
+      margin-top: 1vh;
+      margin-bottom: 2vh;
+      text-shadow: 1px 1px 4px rgb(153, 149, 149);
+  }
+  
+  .card-info span{
+      font-size: 3.7vw;
+      text-align: justify;
+  }
+  
+  .card .card-btn{
+       height: 4vh;
+       width: 30vw;
+       margin-bottom: 4vh;
+       font-size: 4.5vw;
+       margin-top: 2vh;
+  }
+  
+
+
+  #page3{
+    height: 70vh;
+    width: 100vw;
+    margin-top: 80vh;
+}
+
+
+#vid-div{
+    height: 30vh;
+    width: 90%;
+    border-radius: 4px;
+    margin-left: 5%;
+}
+
+#vid-div video{
+    border-radius: 9px;
+    height: 170%;
+    width: 100%;
+    object-fit: fill;
+}
+
+#cover{
+    height: 100%;
+    width: 100%;
+}
+
+
+#eye-container{
+    height: 10vh;
+    width: 40vw;
+}
+
+.blk-side{
+    height: 100%;
+    width:15vw;
+    border-top: 2px solid rgb(208, 203, 203);
+}
+
+.white-side{
+    height: 5vh;
+    width: 6vw;
+    border: 1px solid gray;
+}
+
+#move-div{
+    height: 30px;
+    width: 30px;
+    font-size: 2vw;
+}
+
 
 
 }
