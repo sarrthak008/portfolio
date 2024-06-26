@@ -159,8 +159,8 @@ btns.forEach((btn)=>{
 
 let movingDiv = document.querySelector("#move-div")
 document.addEventListener("mousemove",(dets)=>{
-  movingDiv.style.top=`${dets.clientY-140}px`
-  movingDiv.style.left=`${dets.clientX-110}px`
+  movingDiv.style.top=`${dets.clientY-35}px`
+  movingDiv.style.left=`${dets.clientX-100}px`
 })
 
 let eyes = document.querySelectorAll(".white-side")
@@ -188,4 +188,6 @@ let eyes = document.querySelectorAll(".white-side")
         flag = 0;
        }
   })
+
+  // making chat screen animation...
 

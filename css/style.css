@@ -233,13 +233,14 @@ body::-webkit-scrollbar{
     background: linear-gradient(to left,#f5a4ed,#cb4cde);
     box-shadow: 1px 1px 60px #cb4cdeba;
     border: .1px solid #bb41ceab;
-    transform: translateZ(10px);
+    cursor: pointer;
 }
 
 .btn2{
     background: linear-gradient(to left,#7bd1ee,#48a6c6);
     box-shadow: 1px 1px 60px #58bee0bb;
     border: 0.1px solid #4ab0d2;
+    cursor: pointer;
 }
 
 #bg-box{
@@ -362,6 +363,7 @@ body::-webkit-scrollbar{
 }
 
 .card-info span{
+    display: ;
     font-size: 1.3vw;
     margin-top: 1vh;
     color: rgb(116, 114, 114);
@@ -472,17 +474,77 @@ body::-webkit-scrollbar{
 }
 
 #page4{
+    margin-top: 3vh;
     height: 100vh;
     width: 100vw;
-    background-color: #10b7ef;
-    
+    background-color:whitesmoke;
 }
 
 
+#chat-div{
+    height: 80vh;
+    width: 60vw;
+    margin:2vh 20vw;
+    padding: 5vh 5vw;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+#send-msg,#rev-msg{
+ height: 10vh;
+ width: 100%;
+ display: flex;
+ align-items: center;
+ justify-content:start;
+ gap: 1vw;
+}
 
+.avtar{
+    height: 47px;
+    width: 47px;
+    display:inline-block;
+    border-radius: 50%;
+}
 
+.avtar img{
+    height: 100%;
+    width: 100%;
+    object-fit: fill;
+}
+.send-msg{
+    width: 45%;
+    color: white;
+    padding: 1.5vh 2vw;
+    background-color: black;
+    border-radius: 24px;
+    text-wrap: wrap;
+    font-size: 1.4vw;
+}
 
+.rev-msg{
+    width: 45%;
+    color: white;
+    padding: 1.5vh 2vw;
+    background-color: rgb(4, 46, 255);
+    border-radius: 24px;
+     margin-left: 50%;
+     text-wrap: wrap;
+     font-size: 1.4vw;
+}
 
+.rev-msg a{
+    color: white;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    gap: 1vw;
+}
+
+.cut{
+    margin-left: 67%;
+    width: 20%;
+    margin-top: 0vh;
+}
 
 
 
@@ -748,6 +810,63 @@ body::-webkit-scrollbar{
     width: 30px;
     font-size: 2vw;
 }
+
+
+
+
+#chat-div{
+    height: 80vh;
+    width: 90vw;
+    margin:2vh 0vw;
+}
+#send-msg,#rev-msg{
+ height: 10vh;
+ width: 100%;
+ display: flex;
+ align-items: center;
+ justify-content:start;
+ gap: 1vw;
+}
+
+.avtar{
+    height: 30px;
+    width: 30px;
+    display:inline-block;
+    border-radius: 50%;
+}
+
+.avtar img{
+    height: 100%;
+    width: 100%;
+    object-fit: fill;
+}
+.send-msg{
+    width: 70%;
+    padding: 1.5vh 2vw;
+    font-size: 3.4vw;
+}
+
+.rev-msg{
+    width: 75%;
+    padding: 1.5vh 2vw;
+     margin-left: 30%;
+     font-size: 3.4vw;
+}
+
+.rev-msg a{
+    color: white;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    gap: 1vw;
+}
+
+.cut{
+    margin-left: 50%;
+    width: 35%;
+    margin-top: 0vh;
+}
+
 
 
 
